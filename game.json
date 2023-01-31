@@ -7,22 +7,22 @@
 "description":"El Parking que no puesdes usar",  
 "items":["piedra","bicicleta"],
 "doors":["principal","salida"]
-}
+},
 {"id":"conserjeria","name":"Conserjeria de ENTI",
 "description":"La conserjeria oculta",  
 "items":["tijera","monitor"],
 "doors":["principal","salida"]
-}
+},
 {"id":"baño","name":"Baños de ENTI",
 "description":"El baño al lado de clase",  
 "items":["tijera"],
 "doors":["principal","salida"]
-}
+},
 {"id":"clase","name":"Clase de ENTI 02",
 "description":"Clase de los VIODeros",  
 "items":["piedra","silla","monitor","proyecto"],
 "doors":["principal","salida"]
-}
+},
 {"id":"pasillo","name":"Pasillo de ENTI",
 "description":"El Pasillo principal",  
 "items":["silla"],
