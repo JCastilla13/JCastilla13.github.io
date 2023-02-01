@@ -27,19 +27,19 @@ document.getElementById("terminal").innerHTML += "<p>Te encuentras en "+game_dat
 
 function parseCommand (command)
 {
-
+	console.log("El comando ", command);
 }
 
 function parseInstruction (instruction)
 {
-
+	console.log("La instrucción ", instruction);
 }
 
 function readAction ()
 {
 	let instruction = document.getElementById("commands").value;
 	
-	let data = instruction.split(" ");
+	let data = instruction.trim().split(" ");
 	
 	if (data.length == 0){
 		document.getElementById("terminal").innerHTML += "<p><strong>Error</strong>: escribe una instrucción</p>";
