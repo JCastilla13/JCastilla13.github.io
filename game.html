@@ -25,12 +25,33 @@ document.getElementById("terminal").innerHTML = "<p><strong>¡Bienvenidos a ENTI
 document.getElementById("terminal").innerHTML += "<p>Te encuentras en "+game_data.rooms[current_room].name+". ¿Que quieres hacer?</p>";
 }
 
+function parseCommand (command)
+{
+
+}
+
+function parseInstruction (instruction)
+{
+
+}
+
 function readAction ()
 {
-	document.getElementById("commands").value;
+	let instruction = document.getElementById("commands").value;
 	
-	let data = command.split(" ");
-	console.log(data);
+	let data = instruction.split(" ");
+	
+	if (data.length == 0){
+		document.getElementById("terminal").innerHTML += "<p><strong>Error</strong>: escribe una instrucción</p>";
+			return;
+	}
+	
+	if (data.lenght == 1){
+		parseCommand(data[0]);
+		}
+		else{
+			parseInstruction(data);
+			}
 }
 
 fetch("https://jcastilla13.github.io/game.json").then(response => response.json()).then(data => game(data));
