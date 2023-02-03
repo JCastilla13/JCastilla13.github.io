@@ -13,6 +13,7 @@
 <script>
 
 	let game_data;
+<<<<<<< HEAD
 
 let current_room = 0;
 let items_picked = [];
@@ -148,6 +149,163 @@ function readAction ()
 	}
 
 }
+=======
+	
+	let current_room = 0;
+	let items_picked = [];
+			
+	function game (data) {
+		game_data = data;
+				
+		terminalOut("<p><strong>¡Benvenido a ENTIerrame!</strong> El juego de terror definitivo.</p>");
+		terminalOut("<p>Te encuentras en "+ data.rooms[current_room].name+". ¿Qué quieres hacer?</p>");
+	}
+		
+	function terminalOut (info) {
+	
+		let terminal = document.getElementById("terminal");
+				
+		terminal.innerHTML += info;
+		
+		terminal.scrollTop = terminal.scrollHeight;
+	}
+	
+	function getRoomNumber (room) {
+				
+		for (let i = 0; i < game_data.rooms.length; i++) {
+			if (game_data.rooms[i].id == room) {
+				return i;
+			}
+		}
+				
+		return -1;
+	}
+	
+	function getDoorNumber (door) {
+		
+		for (let i = 0; i < game_data.doors.length; i++) {
+			if (game_data.doors[i].id == door) {
+				return i;
+			}
+		}
+		return -1;
+	}
+	
+	function getItemNumber (item) {
+		
+		for (let i = 0; i < game_data.items.length; i++) {
+			if (game_data.items[i].id == item) {
+				return i;
+			}
+		}
+		return -1;
+	}
+	
+	function parseCommand (command) {
+	
+	  console.log("El comando ", command);
+	  
+		switch (command) {
+					
+			case 'ver':
+				terminalOut("<p>"+game_data.items[current_room].description+"</p>");
+				
+				break;
+						
+			case 'ir':
+					
+				let doors = "";
+				let doors_num = game_data.rooms[current_room].doors.length;
+						
+				for (let i = 0; i < doors_num; i++) {
+					doors += game_data.rooms[current_room].doors[i]+" ";
+				}
+						
+				terminalOut("<p>Puedes ir a: "+doors+"</p>");
+						
+				break;
+						
+			case 'coger':
+					
+				break;
+						
+			default:
+				terminalOut("<p><strong>ERROR:</strong> Comando <strong>"+command+"</strong> no encontrado</p>");
+		}
+	}
+			
+	function readAction () {
+	
+		let instruction = document.getElementById("commands").value;
+		let instruction_trim = instruction.trim();
+
+		let data = instruction_trim.split(" ");
+
+		if (data.length == 0 || instruction_trim == ""){
+			document.getElementById("terminal").innerHTML += "<p><strong>Error</strong>: escribe una instrucción</p>";
+		return;
+		}
+		if (data.length == 1){
+			parseCommand(data[0]);
+		}
+		else{
+			parseInstruction(data);
+		}
+	}
+			
+			
+	function parseInstruction (instruction) {
+	
+	  console.log("La instrucción", instruction);
+	  
+		switch (instruction[0]) {
+					
+			case 'ver':
+			
+					let item_num = getItemNumber(instruction[1]);	
+					
+					if (item_num < 0) {
+					console.log("No hay items en este lugar");
+					
+					return;
+				}
+					
+				break;
+						
+			case 'ir':
+						
+				let door_num = getDoorNumber(instruction[1]);
+						
+				if (door_num < 0) {
+					console.log("Puerta errónea");
+					return;
+				}
+						
+				let room_num = getRoomNumber(game_data.doors[door_num].rooms[0]);
+				let next_room = "";
+						
+				if (room_num == current_room) {
+					current_room = getRoomNumber(game_data.doors[door_num].rooms[1]);
+				}
+				else {
+					current_room = room_num;
+				}
+						
+				next_room = game_data.rooms[current_room].name
+						
+				terminalOut("<p>Cambio de habitación a "+next_room+"</p>");
+						
+				break;
+						
+			case 'coger':
+					
+				break;
+						
+			default:
+				terminalOut("<p><strong>ERROR:</strong> Comando <strong>"+instruction[0]+"</strong> no encontrado</p>");
+		}
+	}
+>>>>>>> ea41cf8d4fa1eea4771176456856fe5b7fe7e4ab
 		
 fetch("https://jcastilla13.github.io/game.json").then(response => response.json()).then(data => game(data));
 
