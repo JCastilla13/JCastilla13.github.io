@@ -7,17 +7,45 @@
 "description":"El Parking que no puesdes usar",  
 "items":["piedra","bicicleta"],
 "doors":["principal","salida"]
+},
+{"id":"conserjeria","name":"Conserjeria de ENTI",
+"description":"La conserjeria oculta",  
+"items":["tijera","monitor"],
+"doors":["principal","salida"]
+},
+{"id":"baño","name":"Baños de ENTI",
+"description":"El baño al lado de clase",  
+"items":["tijera"],
+"doors":["principal","salida"]
+},
+{"id":"clase","name":"Clase de ENTI 02",
+"description":"Clase de los VIODeros",  
+"items":["piedra","silla","monitor","proyector"],
+"doors":["principal","salida"]
+},
+{"id":"pasillo","name":"Pasillo de ENTI",
+"description":"El Pasillo principal",  
+"items":["silla"],
+"doors":["principal","salida","conserjeria"]
 }
 ],
 
 "items":[
 
 {"id":"piedra","name":"Pedrusco mugroso","description":"Es una piedra sucia","pickable":true},
+{"id":"tijera","name":"Tijera afilada","description":"Es una tijera que corta bien","pickable":true},
+{"id":"proyector","name":"Proyector de clase","description":"El proyector que se usa en clase","pickable":false},
+{"id":"monitor","name":"Monitor normalito","description":"Es un monitor muy normalito","pickable":true},
+{"id":"silla","name":"Silla no gamer","description":"Es una silla no gamer","pickable":true},
 {"id":"bicicleta","name":"Bicicleta mugrosa","description":"Algún alumno la abandonó","pickable":false}
 ],
 
 "doors":[
-{"id":"principal","description":"Puerta de entrada a Enti","rooms":["parking","hall"]},
+{"id":"principal","description":"Puerta de entrada a Enti","rooms":["parking","pasillo"]},
+{"id":"conserjeria","description":"Puerta de la conserjeria","rooms":["pasillo"]},
+{"id":"baño","description":"Puerta del baño","rooms":["pasillo"]},
+{"id":"clase","description":"Puerta de clase","rooms":["pasillo"]},
+{"id":"pasillo","description":"Puerta al pasillo","rooms":["parking","conserjeria","baño","clase"]},
 {"id":"salida","description":"la salvacón"}
 ]
 }
