@@ -19,7 +19,7 @@ Aquí almacenaremos la página web estática de la asignatura así como algunos 
 - [ ] Aprender Javascript
 - [x] Aprender MySQL
 
-
+##PREGUNTAS 
 
 - ¿Qué es HTML? ¿CSS? ¿Javascript?
 
