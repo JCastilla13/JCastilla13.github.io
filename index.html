@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Jesus Castilla, página de ENTI (M04UF1). Portada</title>
+<title>Jesús Castilla, página de ENTI (M04UF1). Portada</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="base.css" />
+<link rel="stylesheet" href="presentacion.css" />
 
 </head>
 <body>
 
 <header>
-<h1>Jesus Castilla, página de ENTI (M04UF1)</h1>
-<nav>
-<ul id="main-menu">
-<li id="menu-presentation"><a href="index.html">Presentación</a></li>
-<li id="menu-hobbies"><a href="hobbies.html">Hobbies</a></li>
-<li id="menu-contact"><a href="contact.html">Contacto</a></li>
-<li id="menu-cv"><a href="cv.html">CV</a></li>
-<li id="menu-game"><a href="game.html">Game</a></li>
-</ul>
-</nav>
+<a style="float: left; margin-left: 72px; color: white; font-size: 16px; padding-top: 10px;">
+        <img src="imgs/logoMarcaPersonal.png" alt=" Error al cargar la foto " width="95" height="55">
+      </a>
+      Página de ENTI (M04UF1)
+      <a style="float: right; font-size: 20pt; padding-top: 40px; padding-right: 20px;"> Jesús Castilla</a>
 </header>
 
 <main>
 
-<article>
-<h2>Articulo</h2>
-</article>
-
-<aside>
-<h2>Lateral</h2>
-</aside>
-
+<!-- MENU interactivo IZQUIERDA vertical -->
+<nav>
+    <ul id="main-menu" class="vertical">
+		<li id="menu-presentation" class="active"><a href="index.html">Presentación</a></li>
+		<li id="menu-hobbies"><a href="hobbies.html">Hobbies</a></li>
+		<li id="menu-contact"><a href="contact.html">Contacto</a></li>
+		<li id="menu-cv"><a href="cv.html">CV</a></li>
+		<li id="menu-game"><a href="game.html">Game</a></li>
+    </ul>
+</nav>
 </main>
 
+<p>Soy Jesús Castilla 18 años, estudiante grado superior DAM-VIOD, desenvolupamiento de aplicaciones multiplataforma - videojuegos y ocio digital, en UB Enti Universidad de Barcelona. Me gusta mucho tanto la música como los videojuegos, si me interesa algo me enfoco en ello al 100%, soy bastante tenaz y resistente, controlo muy bien el estrés.</p>
+
 <footer>
-<p>Jesus Castilla (c) <span id="footer-year">2022</span></p>
+<p>Jesús Castilla © <span id="footer-year">2022</span>
+	<a href="https://www.instagram.com/_.jcastilla/">
+		<img class="logoRedes" src="imgs/instagram-logo.png" alt=" Error al cargar la foto " width="20" height="20">
+	</a>
+	<a href="https://www.linkedin.com/in/jes%C3%BAs-castilla-0199a8255/">
+		<img class="logoRedes" src="imgs/linkedin-logo.png" alt=" Error al cargar la foto " width="20" height="20">
+	</a>
+</p>
+
+	
 <script>
- document.getElementById("footer-year").innerHTML = new Date().getFullYear();
- </script>
+document.getElementById("footer-year").innerHTML = new Date().getFullYear();
+</script>
 </footer>
 </body>
 </html>
+
+
