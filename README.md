@@ -19,6 +19,8 @@ Aquí almacenaremos la página web estática de la asignatura así como algunos 
 - [ ] Aprender Javascript
 - [x] Aprender MySQL
 
+
+
 - ¿Qué es HTML? ¿CSS? ¿Javascript?
 
  · HTML (Hyper Text Markup Language): Lenguaje que se utiliza para estructurar y realizar una página web junto a sus contenidos.
