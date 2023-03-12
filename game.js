@@ -152,5 +152,3 @@ function readAction ()
 }
 		
 fetch("https://jcastilla13.github.io/game.json").then(response => response.json()).then(data => game(data));
-
-

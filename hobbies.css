@@ -1,8 +1,47 @@
+fieldset {
+  background-color: #eeeeee;
+  margin-top: 220px;
+  z-index: 0;
+}
 
+legend {
+  font-size: 20px;
+  background-color: gray;
+  color: rgba(248, 248, 248, 0.904);
+  padding: 5px 10px;
+}
+
+.column {
+  margin-top: 90px;
+  padding: 20px;
+}
+
+.box {
+  background-color: #ae4ee634;
+  padding: 30px;
+  padding-right: 40px;
+}
+
+.container {
+  display: flex;
+}
+
+.container div {
+  margin-right: 50px;
+}
+
+.container h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#row2 {
+    margin-top: 570px;
+}
 
 #terminal{
-border: 2px solid black;
-min-width:240px;
-height:120px;
-overflow:scroll;
+  border: 2px solid black;
+  min-width: 240px;
+  height: 120px;
+  overflow: scroll;
 }

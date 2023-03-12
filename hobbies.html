@@ -1,48 +1,113 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Jesús Castilla, página de ENTI (M04UF1). Portada</title>
+	<head>
+		<title>Jesús Castilla, página de ENTI (M04UF1). Portada</title>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="hobbies.css" />
+		<link rel="stylesheet" href="interface.css" />
+	</head>
+	<body>
+		<header>
+			<a style="float: left; margin-left: 72px; color: white; font-size: 16px; padding-top: 10px;">
+				<img src="imgs/logoMarcaPersonal.png" alt=" Error al cargar la foto " width="95" height="55">
+			</a>
+			Página de ENTI (M04UF1)
+			<a style="float: right; font-size: 20pt; padding-top: 40px; padding-right: 20px;"> Jesús Castilla</a>
+		</header>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+		<!-- MENU interactivo IZQUIERDA vertical -->
+		<aside>
+			<ul id="main-menu" class="vertical">
+				<li id="menu-presentation"><a href="index.html">Presentación</a></li>
+				<li id="menu-hobbies" class="active"><a href="hobbies.html">Hobbies</a></li>
+				<li id="menu-contact"><a href="contact.html">Contacto</a></li>
+				<li id="menu-cv"><a href="cv.html">  CV  </a></li>
+				<li id="menu-game"><a href="game.html">Game</a></li>
+			</ul>
+		</aside>
 
-<link rel="stylesheet" href="presentacion.css" />
+		<main>
+			<article>
+				<div class="title">
+					<h1>Profile</h1>
+					<p>I'm a creative PHP webdeveloper</p>
+				</div>
+			</article>
 
-</head>
-<body>
+            <article class="left">
+                <fieldset class="column">
+                    <legend>Juegos</legend>
 
-<header>
-<h1>Jesús Castilla, página de ENTI (M04UF1)</h1>
-<nav>
-<ul id="main-menu">
-<li id="menu-presentation"><a href="index.html">Presentación</a></li>
-<li id="menu-hobbies"><a href="hobbies.html">Hobbies</a></li>
-<li id="menu-contact"><a href="contact.html">Contacto</a></li>
-<li id="menu-cv"><a href="cv.html">CV</a></li>
-<li id="menu-game"><a href="game.html">Game</a></li>
+                    <div class="container">
+                        <div class="box">
+                            <img class="logoRedes" src="imgs/instagram-logo.png" alt=" Error al cargar la foto " width="240" height="240">
+                            <h2>Nombre del juego</h2>
+                        </div>
 
-</ul>
-</nav>
-</header>
+                        <div class="box">
+                            <img class="logoRedes" src="imgs/instagram-logo.png" alt=" Error al cargar la foto " width="240" height="240">
+                            <h2>Nombre del juego</h2>
+                        </div>
 
-<main>
+                        <div class="box">
+                            <img class="logoRedes" src="imgs/instagram-logo.png" alt=" Error al cargar la foto " width="240" height="240">
+                            <h2>Nombre del juego</h2>
+                        </div>
 
-<article>
-<h2>Articulo</h2>
-</article>
+                        <div class="box" style="margin: 0px;">
+                            <img class="logoRedes" src="imgs/instagram-logo.png" alt=" Error al cargar la foto " width="240" height="240">
+                            <h2>Nombre del juego</h2>
+                        </div>
+                    </div>
+                </fieldset>
+			</article>
 
-<aside>
-<h2>Lateral</h2>
-</aside>
+            <article class="left" >
+                <fieldset class="column" id="row2">
+                    <legend>Peliculas</legend>
 
-</main>
+                    <div class="container">
+                        <div class="box">
+                            <img class="logoRedes" src="imgs/instagram-logo.png" alt=" Error al cargar la foto " width="240" height="240">
+                            <h2>Nombre de la pelicula</h2>
+                        </div>
 
-<footer>
-<p>Jesús Castilla (c) <span id="footer-year">2022</span></p>
-<script>
- document.getElementById("footer-year").innerHTML = new Date().getFullYear();
- </script>
-</footer>
-</body>
+                        <div class="box">
+                            <img class="logoRedes" src="imgs/instagram-logo.png" alt=" Error al cargar la foto " width="240" height="240">
+                            <h2>Nombre de la pelicula</h2>
+                        </div>
+
+                        <div class="box">
+                            <img class="logoRedes" src="imgs/instagram-logo.png" alt=" Error al cargar la foto " width="240" height="240">
+                            <h2>Nombre de la pelicula</h2>
+                        </div>
+
+                        <div class="box" style="margin: 0px;">
+                            <img class="logoRedes" src="imgs/instagram-logo.png" alt=" Error al cargar la foto " width="240" height="240">
+                            <h2>Nombre de la pelicula</h2>
+                        </div>
+                    </div>
+                </fieldset>
+			</article>
+		</main>
+			
+		<footer>
+			<p>Jesús Castilla © <span id="footer-year">2022</span>
+				<a href="https://www.instagram.com/_.jcastilla/">
+					<img class="logoRedes" src="imgs/instagram-logo.png" alt=" Error al cargar la foto " width="20" height="20">
+				</a>
+				<a href="https://www.linkedin.com/in/jes%C3%BAs-castilla-0199a8255/">
+					<img class="logoRedes" src="imgs/linkedin-logo.png" alt=" Error al cargar la foto " width="20" height="20">
+				</a>
+			</p>
+
+			<script>
+				document.getElementById("footer-year").innerHTML = new Date().getFullYear();
+			</script>
+		</footer>
+	</body>
 </html>

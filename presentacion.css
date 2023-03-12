@@ -1,67 +1,44 @@
-* {
-	transition: 0.3s;
+.description {
+  flex-direction: column;
+  display: flex;
+  width: 500px;
+  line-height: 1.5;
+  z-index: 0;
 }
 
-html{
-font-family: 'Ubuntu', sans-serif;
-font-family: 'Ubuntu Condensed', sans-serif;
+.description h3 {
+  padding-bottom: 15px;
+  z-index: 0;
 }
 
-body {
-	background-color: #d8d8d8;
-    margin: 0px;
+.author {
+  color: darkgrey;
+  padding-top: 15px;
+  z-index: 0;
 }
 
-        header {
-          background-color: #292929;
-          font-size: 60px;
-          text-align: center;
-          color: #cb6b6c;
-		  text-align: center;
-		  padding-bottom: 10px;
-        }
-	
-footer {
-  background-color: #292929;
-  text-align: center;
-  padding: 5px;
-  color: white;
-}
-
-.vertical {
-  position: unset;
-  overflow: hidden;
+.marco-Personal {
   background-color: #363636;
-  text-align: left;
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-  width: 229px;
-  padding-bottom: 390px;
-  text-align: center;
+  width: 370px;
+  height: 600px;
+  margin-left: -50px;
+  margin-top: -553px;
+  z-index: 0;
 }
 
-.vertical li {
-  list-style: none;
+.detalles {
+  margin-top: 50px;
+  margin-left: 1350px;
+  z-index: 0;
 }
 
-.vertical a {
-  display: inline-block;
-  color: #f2f2f2;
-  padding: 20px 80px;
-  text-decoration: none;
+.detalles h3 {
+  padding-bottom: 15px;
+  z-index: 0;
 }
 
-.vertical a:hover {
-  background-color: rgba(221, 221, 221, 0.979);
-  color: #cb6b6c;
-  transform: scale(1.3); 
-}
-
-.active {
-  background-color: #cb6b6c;
-}
-
-.logoRedes{
-	padding-left: 10px;
+.detalles h4 {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  z-index: 0;
 }

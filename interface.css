@@ -1,0 +1,122 @@
+* {
+  transition: 0.3s;
+  margin: 0px;
+}
+
+html{
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+body {
+  background-color: #d8d8d8;
+}
+
+header {
+  background-color: #292929;
+  color: #ae4ee6ce;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  font-size: 60px;
+  padding-bottom: 10px;
+}
+
+aside {
+  float: left;
+  display: block;
+  z-index: 1;
+}
+
+footer {
+  background-color: #292929;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  z-index: 1;
+}
+
+.center {
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-left: 935px;
+  margin-right: 100px;
+}
+
+.left {
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-left: 320px;
+  margin-right: 100px;
+}
+
+.right {
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-left: 1350px;
+  margin-right: 100px;
+}
+
+.vertical {
+  background-color: #363636;
+  list-style-type: none;
+  text-align: center;
+  position: fixed;
+  overflow: hidden;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  bottom: 0px;
+  top: 81px;
+  z-index: 1;
+}
+
+.vertical li {
+  list-style: none;
+  z-index: 1;
+}
+
+.vertical a {
+  color: #f2f2f2;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 80px;
+  z-index: 1;
+}
+
+.vertical a:hover {
+  background-color: rgba(221, 221, 221, 0.979);
+  color: #ae4ee6ce;
+  transform: scale(1.3); 
+  z-index: 1;
+}
+
+.active {
+  background-color: #ae4ee6ce;
+  z-index: 1;
+}
+
+.logoRedes {
+  padding-left: 10px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 140px;
+  padding-left: 350px;
+  padding-right: 100px;
+  z-index: 0;
+}
+
+.title h1 {
+  padding-bottom: 15px;
+  z-index: 0;
+}

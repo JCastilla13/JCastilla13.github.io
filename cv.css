@@ -1,0 +1,22 @@
+* {
+  transition: 0.3s;
+  margin: 0px;
+}
+
+html{
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+body {
+  background-color: #d8d8d8;
+}
+
+.contenedor-imagenes {
+  display: flex;
+  margin-left: -100px;
+}
+
+.contenedor-imagenes img:first-child {
+  margin-right: 10px;
+}
