@@ -14,7 +14,7 @@ body {
 
 .contenedor-imagenes {
   display: flex;
-  margin-left: -100px;
+  margin-left: -90px;
 }
 
 .contenedor-imagenes img:first-child {

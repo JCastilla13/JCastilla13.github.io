@@ -1,6 +1,6 @@
 fieldset {
   background-color: #eeeeee;
-  margin-top: 220px;
+  padding: 20px;
   z-index: 0;
 }
 
@@ -11,32 +11,77 @@ legend {
   padding: 5px 10px;
 }
 
-.column {
-  margin-top: 90px;
-  padding: 20px;
-}
-
 .box {
   background-color: #ae4ee634;
-  padding: 30px;
-  padding-right: 40px;
-}
-
-.container {
-  display: flex;
-}
-
-.container div {
-  margin-right: 50px;
-}
-
-.container h2 {
+  padding: 20px;
+  margin-top: 20px;
   text-align: center;
-  padding-top: 20px;
 }
 
-#row2 {
-    margin-top: 570px;
+.box a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.box h2{
+  margin-top: 15px;
+  text-align: center;
+}
+
+.box a:hover {
+  color: #ae4ee6ce;
+  transition: 0.01s;
+}
+
+.scroll {
+  width: 300px;
+  height: 600px;
+  overflow: auto;
+}
+
+.row1 {
+  position: absolute;
+  margin: 0 auto;
+  margin-left: 310px;
+  margin-right: 100px;
+}
+
+.row2 {
+  position: absolute;
+  margin: 0 auto;
+  margin-left: 710px;
+  margin-right: 100px;
+}
+
+.row3 {
+  position: absolute;
+  margin: 0 auto;
+  margin-left: 1110px;
+  margin-right: 100px;
+}
+
+.row4 {
+  position: absolute;
+  margin: 0 auto;
+  margin-left: 1510px;
+  margin-right: 100px;
+}
+
+#column1 {
+  margin-top: -50px;
+}
+
+#column2 {
+  margin-top: 570px;
+}
+
+#column3 {
+  margin-top: 570px;
+}
+
+#column4 {
+  margin-top: 570px;
 }
 
 #terminal{
