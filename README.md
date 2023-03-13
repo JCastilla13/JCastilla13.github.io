@@ -21,7 +21,7 @@ Aquí almacenaremos la página web estática de la asignatura así como algunos 
 
 # ENTIérrame (Ejercicio final)
 
-- ¿Qué es HTML? ¿CSS? ¿Javascript?
+## ¿Qué es HTML? ¿CSS? ¿Javascript?
 
  · HTML (Hyper Text Markup Language): Lenguaje que se utiliza para estructurar y realizar una página web junto a sus contenidos.
  
@@ -29,11 +29,11 @@ Aquí almacenaremos la página web estática de la asignatura así como algunos 
  
  · Javascript: Lenguaje de programación utilizado para desarrollo de páginas web interactivas. Puede hacer desde actualizar fuentes de redes sociales a mostrar animaciones y mapas interactivos.
 
-- ¿Qué es el formato Markdown?
+## ¿Qué es el formato Markdown?
 
  · Es un lenguaje de marcado sencillo que sirve para agregar formato, vínculos e imágenes con facilidad al texto simple. Se puede utilizar en comentarios de ticket.
 
-- ¿Qué es el formato JSON? ¿Cómo se convierte un objeto a JSON? ¿Y JSON a un objeto?
+##¿Qué es el formato JSON? ¿Cómo se convierte un objeto a JSON? ¿Y JSON a un objeto?
 
  · JSON (JavaScript Object Notation): Es un formato abierto utilizado como alternativa al XML para la transferencia de datos estructurados entre un servidor de Web y una aplicación Web.
  
