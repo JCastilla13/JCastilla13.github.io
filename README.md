@@ -33,7 +33,7 @@ Aquí almacenaremos la página web estática de la asignatura así como algunos 
 
  · Es un lenguaje de marcado sencillo que sirve para agregar formato, vínculos e imágenes con facilidad al texto simple. Se puede utilizar en comentarios de ticket.
 
-##¿Qué es el formato JSON? ¿Cómo se convierte un objeto a JSON? ¿Y JSON a un objeto?
+## ¿Qué es el formato JSON? ¿Cómo se convierte un objeto a JSON? ¿Y JSON a un objeto?
 
  · JSON (JavaScript Object Notation): Es un formato abierto utilizado como alternativa al XML para la transferencia de datos estructurados entre un servidor de Web y una aplicación Web.
  
