@@ -19,14 +19,13 @@
 			<a style="float: right; font-size: 20pt; padding-top: 40px; padding-right: 20px;"> Jesús Castilla</a>
 		</header>
 
-		<!-- MENU interactivo IZQUIERDA vertical -->
 		<aside>
 			<ul id="main-menu" class="vertical">
 				<li id="menu-presentation"><a href="index.html">Presentación</a></li>
 				<li id="menu-hobbies"><a href="hobbies.html">Hobbies</a></li>
 				<li id="menu-contact" class="active"><a href="contact.html">Contacto</a></li>
 				<li id="menu-cv"><a href="cv.html">  CV  </a></li>
-				<li id="menu-game"><a href="game.html">Game</a></li>
+				<li id="menu-game"><a href="game.html">Juego</a></li>
 			</ul>
 		</aside>
 		
@@ -39,7 +38,7 @@
 
 			<article class="left">
 				<div class="content">
-					<form action="/action_page.php">
+					<form name="contact">
 					  <label for="name">Nombre</label>
 					  <input type="text" id="name" name="firstname" placeholder="Tu nombre..">
 				  
@@ -60,19 +59,39 @@
 				  
 					  <label for="pais">País</label>
 					  <select id="pais" name="pais">
-						<option value="esp">España</option>
-						<option value="arg">Argentina</option>
-						<option value="mex">México</option>
-						<option value="col">Colombia</option>
-						<option value="jpn">Japón</option>
-						<option value="kr">Corea del Sur</option>
-						<option value="chn">China</option>
-						<option value="aus">Australia</option>
-						<option value="usa">USA</option>
-						<option value="ro">Rumania</option>
+						<option value="España">España</option>
+						<option value="Argentina">Argentina</option>
+						<option value="México">México</option>
+						<option value="Colombia">Colombia</option>
+						<option value="Japón">Japón</option>
+						<option value="Corea">Corea del Sur</option>
+						<option value="China">China</option>
+						<option value="Australia">Australia</option>
+						<option value="USA">USA</option>
+						<option value="Rumania">Rumania</option>
 					  </select>
 					
-					  <input type="submit" value="Submit">
+					  <input id="submit" name="submit" type="submit" value="Enviar" onclick="SendAlert(); return false;" >
+					  
+					  <script>
+							function SendAlert(){
+								if(document.contact.name.value == "" || document.contact.surname.value == "" 
+								|| document.contact.age.value == "" || document.contact.email.value == ""){
+									alert(
+									"Por favor, complete los campos obligatorios");
+									return;
+								}
+									alert(
+									"Nombre: "+document.contact.name.value+"\n"+
+									"Apellidos: "+document.contact.surname.value+"\n"+
+									"Edad: "+document.contact.age.value+"\n"+
+									"Email: "+document.contact.email.value+"\n"+
+									"Teléfono: "+document.contact.num.value+"\n"+
+									"Dirección: "+document.contact.direction.value+"\n"+
+									"País: "+document.contact.pais.value+"\n\n"+
+									"Esto es un ejercicio de clase, no se va a enviar"
+								)};
+					</script>
 					</form>
 				  </div>
 			</article>
