@@ -79,7 +79,7 @@ function parseCommand(command)
 			for (let i = 0; i < items_inventory; i++) {
 				inventory += items_picked[i]+" ";
 			}
-			terminal_out("<p>Tu inventario es: "+inventory+"</p>");
+			terminal_out("<p>En tu inventario hay: "+inventory+"</p>");
 			break;
 
 		default:
@@ -90,10 +90,14 @@ function parseCommand(command)
 function parseInstruction(instruction)
 {
 	console.log("La instrucción ", instruction);
-
 	switch (instruction[0]){
 		case "ver":
-
+			let item_count = getItemNumber(instruction[1]);
+			if (item_count < 0) {
+				terminal_out("<p><strong>"+instruction[1]+"</strong> no se encuentra en este lugar</p>");
+				return;
+			}
+			terminal_out("<p><strong>"+ instruction[1]+":</strong> " +game_data.items[item_count].description+"</p>");
 			break;
 
 		case "ir":
@@ -139,7 +143,20 @@ function parseInstruction(instruction)
 						terminal_out("<p><strong>"+item+"</strong> se añadió a tu inventario correctamente</p>");
 						return; 
 					}
+					else {
+						terminal_out("<p>El item que buscas no esta en este lugar o puede que ya lo hayas recogido, revisa tu inventario para estar seguro</p>");
+						return; 
+					}
 				});
+			break;
+			
+		case "inventario":
+			let item_inventory = getItemNumber(instruction[1]);
+			if (item_inventory <= 0) {
+				terminal_out("<p><strong>"+instruction[1]+"</strong> no esta dentro de tu inventario</p>");
+				return;
+			}
+			terminal_out("<p><strong>"+instruction[1]+":</strong> " +game_data.items[item_inventory].description+"</p>");
 			break;
  
 		default:
@@ -151,21 +168,17 @@ function readAction()
 {
 	let instruction = document.getElementById("commands").value;
 	let instruction_trim = instruction.trim();
-
 	let data = instruction_trim.split(" ");
-
 	if (data.length == 0 || instruction_trim == ""){
 		terminal_out("<p><strong>Error</strong>: escribe una instrucción</p>");
 		return;
 	}
-
 	if (data.length == 1){
 		parseCommand(data[0]);
 	}
 	else{
 		parseInstruction(data);
 	}
-
 }
 		
 fetch("https://jcastilla13.github.io/game.json").then(response => response.json()).then(data => game(data));
