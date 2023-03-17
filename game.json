@@ -120,7 +120,7 @@
 		
 		{"id":"conserjeria",
 		"description":"Puerta de la conserjeria",
-		"rooms":["conserjeria"]
+		"rooms":["pasillo","conserjeria"]
 	},
 		
 		{"id":"baño",
