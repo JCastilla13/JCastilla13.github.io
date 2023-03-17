@@ -32,7 +32,7 @@
 		"doors":["pasillo"]
 	},
 	
-		{"id":"escaleras1planta",
+		{"id":"escaleras01planta",
 		"name":"Escaleras de la primera planta",
 		"description":"Escaleras que dirigen a la segunda planta",  
 		"items":["botella"],
@@ -43,14 +43,14 @@
 		"name":"Segunda planta",
 		"description":"Segunda planta de Enti",  
 		"items":["tuberia","maniqui"],
-		"doors":["escaleras1planta"]
+		"doors":["escaleras01planta"]
 	},	
 	
 		{"id":"pasillo",
 		"name":"Pasillo de ENTI",
 		"description":"El Pasillo principal",  
 		"items":["silla"],
-		"doors":["principal","salida","conserjeria","baño","clase02","escaleras1planta","planta02"]
+		"doors":["principal","salida","conserjeria","baño","clase02","escaleras01planta","planta02"]
 	}
 ],
 
@@ -135,17 +135,17 @@
 		
 		{"id":"pasillo",
 		"description":"Puerta al pasillo",
-		"rooms":["parking","conserjeria","baño","clase","salida"]
+		"rooms":["principal","salida","conserjeria","baño","clase02","escaleras01planta","planta02"]
 	},
 	
-		{"id":"escaleras1planta",
+		{"id":"escaleras01planta",
 		"description":"Escaleras a la segunda planta",
-		"rooms":["pasillo","pasillo2planta"]
+		"rooms":["pasillo","planta02"]
 	},
 	
 		{"id":"planta02",
 		"description":"Segunda planta",
-		"rooms":["pasillo","pasillo2planta"]
+		"rooms":["escaleras01planta"]
 	},
 	
 		{"id":"salida",
