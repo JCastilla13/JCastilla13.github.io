@@ -120,7 +120,7 @@ function parseInstruction(instruction)
 				current_room = room_num;
 			}
 			let next_room = game_data.rooms[current_room].name;
-			terminal_out("<p>Te has movido hacia "+next_room+"</p>");
+			terminal_out("<p>Te has movido hacia "+next_room+", que planeas hacer a continuación?</p>");
 			break;
 
 		case "coger":
