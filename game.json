@@ -125,27 +125,27 @@
 		
 		{"id":"baño",
 		"description":"Puerta del baño",
-		"rooms":["pasillo"]
+		"rooms":["pasillo","baño"]
 	},
 		
 		{"id":"clase02",
 		"description":"Puerta de clase",
-		"rooms":["pasillo"]
+		"rooms":["pasillo","clase02"]
 	},
 		
 		{"id":"pasillo",
 		"description":"Puerta al pasillo",
-		"rooms":["principal","salida","conserjeria","baño","clase02","escaleras01planta","planta02"]
+		"rooms":["pasillo","principal","salida","conserjeria","baño","clase02","escaleras01planta","planta02"]
 	},
 	
 		{"id":"escaleras01planta",
 		"description":"Escaleras a la segunda planta",
-		"rooms":["pasillo","planta02"]
+		"rooms":["pasillo","planta02","escaleras01planta"]
 	},
 	
 		{"id":"planta02",
 		"description":"Segunda planta",
-		"rooms":["escaleras01planta"]
+		"rooms":["escaleras01planta","planta02"]
 	},
 	
 		{"id":"salida",
