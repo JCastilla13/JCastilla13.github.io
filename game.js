@@ -152,7 +152,7 @@ function parseInstruction(instruction)
 			
 		case "inventario":
 			let item_inventory = getItemNumber(instruction[1]);
-			if (item_inventory <= 0) {
+			if (item_inventory < 0) {
 				terminal_out("<p><strong>"+instruction[1]+"</strong> no esta dentro de tu inventario</p>");
 				return;
 			}

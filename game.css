@@ -1,12 +1,52 @@
 
+div h1{
+  color: #ffffff;
+}
+
+input[type=text] {
+  background-color: #008f39;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 20px;
+  width: 20%;
+  margin: 10px 0;
+}
+
+input[type=submit] {
+  background-color: #008f39;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 20px;
+  width: 10%;
+  margin: 10px 0;
+}
+
+input[type=submit]:hover {
+  background-color: #006629;
+}
+
 .content-game {
   width: 1000px;
   margin-left: -380px;
+  color: #ffffff;
 }
 
+.terminal-game {
+  background-image: url("imgs/pc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-hacker {
+  background-image: url("imgs/hacker.gif");	
+}
 #terminal{
   border: 2px solid black;
   min-width:240px;
-  height:120px;
+  height:420px;
   overflow:scroll;
 }
