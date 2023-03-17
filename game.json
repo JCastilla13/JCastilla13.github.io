@@ -43,7 +43,7 @@
 		"name":"Segunda planta",
 		"description":"Segunda planta de Enti",  
 		"items":["tuberia","maniqui"],
-		"doors":["escaleras01planta","planta02"]
+		"doors":["escaleras01planta"]
 	},	
 	
 		{"id":"pasillo",
@@ -140,7 +140,7 @@
 	
 		{"id":"escaleras01planta",
 		"description":"Escaleras a la segunda planta",
-		"rooms":["pasillo","planta02","escaleras01planta"]
+		"rooms":["pasillo","escaleras01planta"]
 	},
 	
 		{"id":"planta02",
