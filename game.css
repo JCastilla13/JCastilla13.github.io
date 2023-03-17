@@ -50,3 +50,19 @@ input[type=submit]:hover {
   height:420px;
   overflow:scroll;
 }
+
+.vertical a:hover {
+  color: #006629;
+}
+
+.active {
+  background-color: #008f39;
+}
+
+header {
+  color: #008f39;
+}
+
+.color-image {
+  filter: hue-rotate(930deg);
+}

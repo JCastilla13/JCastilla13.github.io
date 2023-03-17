@@ -14,14 +14,14 @@
 		{"id":"conserjeria",
 		"name":"Conserjeria de ENTI",
 		"description":"La conserjeria oculta",  
-		"items":["tijera","monitor"],
+		"items":["tijeras","monitor"],
 		"doors":["pasillo"]
 	},
 	
 		{"id":"baño",
 		"name":"Baños de ENTI",
 		"description":"El baño al lado de clase",  
-		"items":["tijera"],
+		"items":["tijeras"],
 		"doors":["pasillo"]
 	},
 	
@@ -62,9 +62,9 @@
 		"pickable":true
 	},
 		
-		{"id":"tijera",
-		"name":"Tijera afilada",
-		"description":"Es una tijera que corta bien",
+		{"id":"tijeras",
+		"name":"Tijeras afiladas",
+		"description":"Son unas tijeras que cortan bien",
 		"pickable":true
 	},
 		
@@ -120,7 +120,7 @@
 		
 		{"id":"conserjeria",
 		"description":"Puerta de la conserjeria",
-		"rooms":["pasillo","conserjeria"]
+		"rooms":["conserjeria"]
 	},
 		
 		{"id":"baño",

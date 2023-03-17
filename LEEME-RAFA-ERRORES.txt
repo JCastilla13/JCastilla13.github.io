@@ -1,0 +1,15 @@
+ERRORES DE JUEGO
+
+Estos son unos pocos errores que no he conseguido arreglar en el apartado de juego.
+
+1. Al haber mas de un item en la habitación, cuando pones coger "item", 
+pondra el mensaje correspondiente mas uno, dos... extra dependiendo de los items de la habitación. 
+Ese/os mensaje extra es el que sale cuando no esta el item que pones al hacer la acción de coger.
+A medida que vas cogiendo items, dependiendo del número de estos, el mensaje sale menos veces.
+No cuentan los items unpickables. 
+
+2. El inventario "item descripcion", funciona pero no de la manera deseada. 
+Al escribir inventario "item", independientemente, esté el item dentro de tu inventario o no,
+saldrá la descripción de este.
+He estado un buen rato mirando, seguramente sea un error tonto pero no lo he corregido, 
+yo creo que hay algo mal con el if que mira si tengo < 0 items en el inventario.
