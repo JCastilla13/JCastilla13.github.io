@@ -10,29 +10,47 @@
 		"items":["piedra","bicicleta"],
 		"doors":["principal","salida"]
 	},
+	
 		{"id":"conserjeria",
 		"name":"Conserjeria de ENTI",
 		"description":"La conserjeria oculta",  
 		"items":["tijera","monitor"],
-		"doors":["principal","salida"]
+		"doors":["pasillo"]
 	},
+	
 		{"id":"baño",
 		"name":"Baños de ENTI",
 		"description":"El baño al lado de clase",  
 		"items":["tijera"],
-		"doors":["principal","salida"]
+		"doors":["pasillo"]
 	},
-		{"id":"clase",
+	
+		{"id":"clase02",
 		"name":"Clase de ENTI 02",
 		"description":"Clase de los VIODeros",  
 		"items":["piedra","silla","monitor","proyector"],
-		"doors":["principal","salida"]
+		"doors":["pasillo"]
 	},
+	
+		{"id":"escaleras1planta",
+		"name":"Escaleras de la primera planta",
+		"description":"Escaleras que dirigen a la segunda planta",  
+		"items":["botella"],
+		"doors":["pasillo","planta02"]
+	},
+	
+		{"id":"planta02",
+		"name":"Segunda planta",
+		"description":"Segunda planta de Enti",  
+		"items":["tuberia","maniqui"],
+		"doors":["escaleras1planta"]
+	},	
+	
 		{"id":"pasillo",
 		"name":"Pasillo de ENTI",
 		"description":"El Pasillo principal",  
 		"items":["silla"],
-		"doors":["principal","salida","conserjeria"]
+		"doors":["principal","salida","conserjeria","baño","clase02","escaleras1planta","planta02"]
 	}
 ],
 
@@ -67,7 +85,25 @@
 		"description":"Es una silla no gamer",
 		"pickable":true
 	},
-		
+	
+		{"id":"maniqui",
+		"name":"Maniqui zombie",
+		"description":"Un maniqui en forma de zombie plantado en mitad de la sala",
+		"pickable":false
+	},
+	
+		{"id":"tuberia",
+		"name":"Tuberia oxidada",
+		"description":"Una tuberia oxidada tirada en el suelo",
+		"pickable":true
+	},
+	
+		{"id":"botella",
+		"name":"Botella de agua",
+		"description":"Una botella en medio de las escaleras",
+		"pickable":true
+	},
+	
 		{"id":"bicicleta",
 		"name":"Bicicleta mugrosa",
 		"description":"Algún alumno la abandonó",
@@ -92,18 +128,29 @@
 		"rooms":["pasillo"]
 	},
 		
-		{"id":"clase",
+		{"id":"clase02",
 		"description":"Puerta de clase",
 		"rooms":["pasillo"]
 	},
 		
 		{"id":"pasillo",
 		"description":"Puerta al pasillo",
-		"rooms":["parking","conserjeria","baño","clase"]
+		"rooms":["parking","conserjeria","baño","clase","salida"]
 	},
-		
+	
+		{"id":"escaleras1planta",
+		"description":"Escaleras a la segunda planta",
+		"rooms":["pasillo","pasillo2planta"]
+	},
+	
+		{"id":"planta02",
+		"description":"Segunda planta",
+		"rooms":["pasillo","pasillo2planta"]
+	},
+	
 		{"id":"salida",
-		"description":"la salvacón"
+		"description":"la salvacón",
+		"rooms":["parking"]
 	}]
 }
 
